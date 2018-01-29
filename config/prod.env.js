@@ -1,9 +1,8 @@
 module.exports = {
     NODE_ENV: '"production"',
-    LOCAL_HOST: '"http://workflow.apitops.com"',
-    AUTH_SERVER_HOST: '"http://alopex.apitops.com"',
-    APP_ID: '"9d4937b662c111e78f7000163e133b79"',
-    API_HOST: '"http://workflow-api.apitops.com"',
+    LOCAL_HOST: '"http://192.168.40.179:8888"',
+    AUTH_SERVER_HOST: '"http://10.20.36.31:6200"',
+    APP_ID: '"71c063f2dbd011e7b5cb000c2927f492"',
+    API_HOST: '"http://192.168.40.179:6201"',
     APP_NAME: '"workflow"'
-
 }

@@ -151,12 +151,6 @@
             onSubmit(formName) {
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-//                        let requestBody = {
-//                                'name': this.form.name,
-//                                'ticketType': 'createProject',
-//                                'status': 'Apply',
-//                                'data': this.form
-//                            }
                         if (JSON.stringify(this.requestBody) === '{}') {
                             this.requestBody = {
                                     'name': this.form.name,

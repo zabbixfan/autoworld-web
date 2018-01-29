@@ -35,7 +35,7 @@ axios.interceptors.response.use(
                     if (typeof (error.response.data.message) === 'object') {
                         message = JSON.stringify(error.response.data.message)
                     } else {
-                        message = error.response.data.data.message
+                        message = error.response.data.message
                     }
                     Message.error(message)
                     break
@@ -114,9 +114,11 @@ export function put(url, data = {}) {
  * @param data
  * @returns {Promise}
  */
-export function del(url) {
+export function del(url, params = {}) {
     return new Promise((resolve, reject) => {
-        axios.delete(url)
+        axios.delete(url, {
+            params: params
+        })
             .then(response => {
                 resolve(response)
             }, err => {

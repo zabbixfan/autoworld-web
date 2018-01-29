@@ -21,6 +21,9 @@ export default {
         },
         userLoginName: state => {
             return state.user ? state.user.loginName : ''
+        },
+        userId: state => {
+            return state.user ? state.user.id : ''
         }
     },
     mutations: {

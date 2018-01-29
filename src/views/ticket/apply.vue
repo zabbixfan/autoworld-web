@@ -36,16 +36,23 @@
 //                      value: 'codehub',
 //                      label: 'Codehub仓库申请'
 //                    }],
-                options: [{
-                      value: 'projectapply',
-                      label: 'Onekit工程申请'
-                    }, {
-                      value: 'projectrestart',
-                      label: 'Onekit工程重启'
-                    }, {
-                      value: 'kvmapply',
-                      label: 'KVM虚拟机申请'
-                    }],
+                options: [
+                    {
+                      value: 'kibanaaccess',
+                      label: '日志查看申请'
+                    },
+                    {
+                      value: 'dcrecord',
+                      label: '机房进出登记记录'
+                    }
+                    // {
+                    //   value: 'projectrestart',
+                    //   label: 'Onekit工程重启'
+                    // }, {
+                    //   value: 'kvmapply',
+                    //   label: 'KVM虚拟机申请'
+                    // }
+                    ],
                 pathvalue: '请选择',
                 isShow: true
 

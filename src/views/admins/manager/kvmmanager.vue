@@ -26,7 +26,7 @@
                         <el-table-column prop="hostServer" label="宿主IP" sortable></el-table-column>
                         <el-table-column prop="lastUpdate" label="最后更新" sortable></el-table-column>
                         <el-table-column label="主机状态" sortable>
-                            <template scope="scope">
+                            <template slot-scope="scope">
                                 <el-tag v-if="scope.row.status ==='Running'" type="success">运行中</el-tag>
                                 <el-tag v-if="scope.row.status ==='Stopping'" type="danger">停止中</el-tag>
                                 <i style="color:#F7BA2A" v-if="scope.row.status ==='Locking'" class="el-icon-loading"></i>
@@ -35,7 +35,7 @@
                              </template>
                         </el-table-column>
                         <el-table-column label="操作">
-                            <template scope="scope">
+                            <template slot-scope="scope">
                                 <el-dropdown @command="handleCommand">
                                   <el-button type="primary" size="small">
                                     <i class="el-icon-setting"> </i> 管理

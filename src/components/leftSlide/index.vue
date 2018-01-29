@@ -6,7 +6,7 @@
                 <span style="font-size:30px;color:#FFF">{{appName}}</span>
             </router-link>
             <!--<el-menu class="menu-box" theme="light"  router :default-active="$route.path" unique-opened>-->
-            <el-menu class="menu-box" theme="light"  router>
+            <el-menu class="menu-box"  router>
                 <div v-for="(item, index) in nav_menu_data" :key="index">
                     <el-menu-item class="menu-list" v-if="typeof item.child === 'undefined'" :index="item.path">
                         <i class="icon fa" :class="item.icon"></i>

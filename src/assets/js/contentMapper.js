@@ -24,10 +24,10 @@ export default {
     },
     getTicketTypeName(ticketType) {
         switch (ticketType) {
-            case 'createProject':
-                return 'Onekit工程申请'
-            case 'createKvmVm':
-                return 'KVM虚拟机申请'
+            case 'kibanaaccess':
+                return '日志查看申请'
+            case 'dcrecord':
+                return '机房进出登记记录'
             case 'restartProject':
                 return 'Onekit工程重启'
             default:
@@ -36,15 +36,19 @@ export default {
     },
     getTicketStatus(ticketStatus) {
         switch (ticketStatus) {
-            case 'Delete':
+            case 'delete':
                 return '已删除'
-            case 'Refuse':
+            case 'refuse':
                 return '驳回'
-            case 'Apply':
-                return '待审核'
-            case 'Approve':
+            case 'dept_allow':
+                return '待IT审核'
+            case 'it_allow':
+                return '待运维审核'
+            case 'apply':
+                return '待部门审核'
+            case 'executor_allow':
                 return '待执行'
-            case 'Complete':
+            case 'complete':
                 return '已完成'
             default:
                 return '未知'

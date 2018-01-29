@@ -6,7 +6,7 @@ export default {
     searchUser: AUTH_SERVER_HOST + '/api/usersearch',
     getUserById: (userId) => AUTH_SERVER_HOST + '/api/userinfo/' + userId,
     Tickets: Host + '/api/tickets',
-    Ticket: (ticketId) => Host + '/api/tickets/' + ticketId,
+    Ticket: (ticketId) => Host + '/api/ticket/' + ticketId,
     Services: Host + '/api/services',
     service: Host + '/api/service',
     ticketLogs: (ticketId) => Host + '/api/ticketlog/' + ticketId,
@@ -16,6 +16,6 @@ export default {
     searchWifiUser: Host + '/api/searchwifiuser',
     wifiUsers: Host + '/api/wifiuser',
     wifiUser: (userId) => Host + '/api/wifiuser/' + userId,
-    servers: 'http://192.168.6.120:6201/api/servers'
-
+    servers: 'http://192.168.6.120:6201/api/servers',
+    esIndexList: Host + '/api/esindex'
 }

@@ -48,7 +48,7 @@
                         <el-table-column prop="env" label="环境" sortable></el-table-column>
                         <el-table-column prop="ip" label="IP地址" sortable></el-table-column>
                         <el-table-column label="服务状态" sortable>
-                            <template scope="scope">
+                            <template slot-scope="scope">
                                 <el-tag v-if="scope.row.status ==='ok'" type="success">正常</el-tag>
                                 <el-tag v-if="scope.row.status ==='failure'" type="danger">不正常</el-tag>
                              </template>

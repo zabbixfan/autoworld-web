@@ -23,7 +23,7 @@
     import vFooter from './footer'
 
     export default {
-        name: 'content',
+        name: 'content1',
         components: {
             hSection,
             vFooter
